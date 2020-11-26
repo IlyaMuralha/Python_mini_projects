@@ -16,17 +16,15 @@ def get_response(value):
 
 
 def many_requests(n, value):
-    i = 0
     for i in range(n):
         get_response(value)
         i += 1
 
 
 def my_func(n, sites_url):
-    s = [0]
     for i in sites_url:
         s = i
         many_requests(n, s)
 
 
-my_func(200, sites_url)
+my_func(2, sites_url)
